@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Validation</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-info">
+        <div class="information">
+            <h1 class="contact-title">Contact Information</h1>
+            <div class="contacts">
+                <div class="location info-box">
+                    <img class="info-icon" src="./asset/png_img/location.png" alt="" />Kathmandu, Kumari Hall
+                </div>
+                <div class="phone-number info-box">
+                    <img class="info-icon" src="./asset/png_img/phone.png" alt="" />
+                    <input type="text" id="phoneNumber" placeholder="Enter phone number">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                <div class="website info-box">
+                    <img class="info-icon" src="./asset/png_img/earth.png" alt="" />
+                    <input type="text" id="website" placeholder="Enter website">
+                </div>
+                <div class="gmail info-box">
+                    <img class="info-icon" src="./asset/png_img/earth.png" alt="" />
+                    <input type="email" id="email" placeholder="Enter email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var email = document.getElementById("email").value;
+
+            // Reset error messages
+            document.getElementById("phoneError").innerHTML = "";
+            document.getElementById("emailError").innerHTML = "";
+
+            // Phone number validation
+            if (!phoneNumber.trim()) {
+                document.getElementById("phoneError").innerHTML = "Please enter a phone number.";
+                return false;
+            }
+
+            // Email validation
+            if (!email.trim()) {
+                document.getElementById("emailError").innerHTML = "Please enter an email address.";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

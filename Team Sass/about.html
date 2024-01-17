@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="about.js"></script>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="sub-nav-container">
+          <!-- first-container -->
+          <div class="container-first">
+            <div class="logo">
+              <a href="#" class="logo-name">Printer Bazzar</a>
+            </div>
+            <div class="search-bar">
+              <form action="#">
+                <input type="text" placeholder="Search" class="searching" />
+                <button class="search-btn">
+                  <img src="/asset/png_img/pngwing.com.png" alt="" class="search-icon" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- end of first container -->
+          <!-- starting navigation bar and add to cart -->
+          <div class="container-second">
+            <nav>
+              <ul class="nav-list">
+                <li class="lists"><a href="home.html" class="links">Home</a></li>
+                <li class="lists"><a href="blog.html" class="links">Blog</a></li>
+                <li class="lists"><a href="product.html" class="links">Product</a></li>
+                <li class="lists"><a href="#" class="links">Research</a></li>
+                <li class="lists"><a href="about.html" class="links">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end of navigation bar and add to cart -->
+        </div>
+      </div>
+       <!-- displaying discount message -->
+    <div class="disount-message">
+        <marquee class="display-message"
+          >OUR BIGGEST SALE <span class="big">50%</span> OFF ON ALL MINI PRINTER
+        </marquee>
+      </div>
+    <!-- ending of message -->
+    <!-- contact info -->
+    <div class="contact-info">
+      <div class="information">
+        <h1 class="contact-title">Contact Information</h1>
+        <div class="contacts">
+          <div class="location info-box">
+            <img
+              class="info-icon"
+              src="./asset/png_img/location.png"
+              alt=""
+            />Kathmandu, Kumari Hall
+          </div>
+          <div class="phone-number info-box">
+            <img class="info-icon" src="./asset/png_img/phone.png" alt="" />+9841002233
+          </div>
+          <div class="website info-box">
+            <img
+              class="info-icon"
+              src="./asset/png_img/earth.png"
+              alt=""
+            />printerbazzar.com
+          </div>   
+          <div class="gmail info-box">
+            <img
+              class="info-icon"
+              src="./asset/png_img/earth.png"
+              alt=""><p>printerbazzar123@gmail.com</p>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- end of contact info -->
+    <!-- enquiry -->
+    
+    <div class="enquiry">
+      <div class="sub-enquiry">
+        <form name="messageForm" class="enquiry-form" onsubmit="validateForm()">
+          <h1 class="info-title">Get In Touch</h1>
+          <br>
+          <div class="name-container">
+            <div class="name">
+              <label> Frist Name</label>
+              <input  id = "fname" type="text" placeholder="Your firstname" />
+            </div>
+            <div class="name">
+              <label> Last Name Name</label>
+              <input id = "lname" type="text" placeholder="Your lastname" />
+            </div>
+          </div>
+          
+          <div class="gmail">
+            <label for="">Email</label>
+            <input  id = "email" type="text" placeholder="Your email address" style="width: 520px;" />
+          </div>
+          
+          <div class="subject">
+            <label for="">Subject</label>
+            <input id = "subject" type="text" placeholder="Your subject of this message" />
+          </div>
+          <div class="message">
+            <label for="">Message</label>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Say something about us" class="text-area">
+            </textarea>
+          </div>
+          
+          <input type="submit" value="Send Message" class="message-btn">
+        </form>
+        <div class="map">
+          <img src="/asset/map.jpg" alt="" class="map-img">
+        </div>
+      </div>
+    </div>
+<!-- <button class="message-btn">Send Message</button> -->
+    <!-- end of enquiry -->
+    <br><br><br>
+
+
+    <!-- starting of intro of team -->
+    <div class="intro">
+      <h1>Discover our team</h1>
+    </div>
+    <br><br><br>
+    <div class="grid-container">
+      <div class="team-member">
+        <div class="cv">
+        <a href="cvsujal.html"><img src="/asset/member_photo/sujal.jpg" alt="sujal" srcset="" class="team-img"></a>
+        <p style="text-align: center;">Leader</p>
+        <p style="text-align: center;">Sujal Bhandari</p>
+          <!-- <div class="socialmedia">
+            <img src="/asset/facebook.png" alt="" class="socialmedia-icon">
+            <img src="/asset/instagram.png" alt=""  class="socialmedia-icon">
+            <img src="/asset/linkedin.png" alt=""  class="socialmedia-icon">
+          </div> -->
+      </div>
+      <div class="cv">
+        <a href="cvapex.html"><img src="/asset/member_photo/apexchay1.jpg" alt="apexchya" srcset="" class="team-img"></a>
+        <p style="text-align: center;">Co-Leader</p>
+        <p style="text-align: center;">Apekshya Aryal </p>
+          <!-- <div class="socialmedia">
+            <img src="/asset/facebook.png" alt="" class="socialmedia-icon">
+            <img src="/asset/instagram.png" alt=""  class="socialmedia-icon">
+            <img src="/asset/linkedin.png" alt=""  class="socialmedia-icon">
+          </div> -->
+      </div>
+        <div class="cv">
+        <a href="cvsauravT.html"><img src="/asset/member_photo/sauravTimilsina.jpeg" alt="saurav timalsina" srcset="" class="team-img"></a>
+        <p style="text-align: center;">ELder</p>
+        <p style="text-align: center;">Saurav Timalsina</p>
+          <!-- <div class="socialmedia">
+            <img src="/asset/facebook.png" alt="" class="socialmedia-icon">
+            <img src="/asset/instagram.png" alt=""  class="socialmedia-icon">
+            <img src="/asset/linkedin.png" alt=""  class="socialmedia-icon">
+          </div> -->
+      </div>
+      <div class="cv">
+        <a href="cvsaurav.html"><img src="/asset/member_photo/me.jpeg" alt="saurav praja" srcset="" class="team-img"></a>
+        <p style="text-align: center;">ELder</p>
+        <p style="text-align: center;">Saurav Prajapati</p>
+          <!-- <div class="socialmedia">
+            <div class="facebook-icon">
+            <img src="/asset/facebook.png" alt="" class="socialmedia-icon">
+          </div>
+          <div class="insta-icon">
+            <img src="/asset/instagram.png" alt=""  class="socialmedia-icon">
+          </div>
+          <div class="linkedin-icon">
+            <img src="/asset/linkedin.png" alt=""  class="socialmedia-icon">
+          </div>
+          </div> -->
+      </div>
+    </div>
+    <br><br><br>
+    <footer>
+      <div class="footercontainer">
+       <div class="cols">
+        <div class="col1">
+          <h2>Printer Bazzar</h2>
+          <br>
+          <div class="footer-italic">
+            <a href="#" style="text-decoration: none;" class="liner">blog</a>
+            <a href="#" style="text-decoration: none;" class="liner">Privacy Policy</a>
+            <a href="" style="text-decoration: none;" class="liner">Programs</a>
+          </div>
+        </div>
+  
+        <div class="col1">
+          <h2>Customer Care</h2>
+          <br>
+          <div class="footer-italic">
+            <a href="#" style="text-decoration: none;"  class="liner">Contact</a>
+            <a href="#" style="text-decoration: none;"  class="liner">FAQ</a>
+            <a href="" style="text-decoration: none;"  class="liner">Payment Options</a>
+            <a href="" style="text-decoration: none;"  class="liner">Special Offers</a>
+          </div>
+        </div>
+  
+        <div class="col1">
+          <h2>Information</h2>
+          <br>
+          <div class="footer-italic">
+            <a href="#" style="text-decoration: none;"  class="liner">Delivery Info</a>
+            <a href="#" style="text-decoration: none;"  class="liner">Support</a>
+            <a href="" style="text-decoration: none;"  class="liner">Location</a>
+          </div>
+        </div>
+  
+        <div class="col1">
+          <h2>Follow Us</h2>
+          <br>
+          <!-- <div class="socialmedia">
+            <div class="media-social">
+              <a href="#"><img src="/asset/png_img/facebook.png" alt="" class="socialmedia-icon"></a>
+              <a href="#"><img src="/asset/png_img/instagram.png" alt=""  class="socialmedia-icon"></a>
+              <a href="#"><img src="/asset/png_img/linkedin.png" alt=""  class="socialmedia-icon"></a>
+            </div>
+          </div> -->
+          <div class="media-social">
+            <a href="#"><img src="/asset/png_img/facebook.png" alt="" class="socialmedia-icon" style="width:40px; height: 40px;"></a>
+            <a href="#"><img src="/asset/png_img/instagram.png" alt=""  class="socialmedia-icon" style="width:40px; height: 40px;"></a>
+            <a href="#"><img src="/asset/png_img/linkedin.png" alt=""  class="socialmedia-icon" style="width:40px; height: 40px;"></a>
+          </div>
+        </div>
+       </div>
+      </div>
+      <div class="team">
+        <p class="team-inside"><i>All right deserved to Team Sass</i></p>
+      </div>
+      </footer>
+      
+  </body>
+</html>

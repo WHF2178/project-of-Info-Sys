@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canon PIXMA</title>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <div class="nav-container">
+    <div class="sub-nav-container">
+      <!-- first-container -->
+      <div class="container-first">
+        <div class="logo">
+          <a href="#" class="logo-name">Printer Bazzar</a>
+        </div>
+        <div class="search-bar">
+          <form action="#" class="formm">
+            <input type="text" placeholder="Search" class="searching" />
+            <button class="search-btn">
+              <img src="/asset/png_img/pngwing.com.png" alt="" class="search-icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- end of first container -->
+      <!-- starting navigation bar and add to cart -->
+      <div class="container-second">
+        <nav>
+          <ul class="nav-list">
+            <li class="lists"><a href="#" class="links">Home</a></li>
+            <li class="lists"><a href="#" class="links">Blog</a></li>
+            <li class="lists"><a href="#" class="links">Product</a></li>
+            <li class="lists"><a href="#" class="links">Research</a></li>
+            <li class="lists"><a href="#" class="links">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end of navigation bar and add to cart -->
+    </div>
+  </div>
+  <!-- displaying discount message -->
+  <div class="disount-message">
+    <marquee class="display-message">
+      OUR BIGGEST SALE 50% OFF ON ALL MINI PRINTER
+    </marquee>
+  </div>
+
+  <!-- Left, Middle, and Right Divs -->
+  <div class="left-div">
+    <!-- <div class="slider">
+      <img src="pic.jpg" alt="pic name" id="sliderImage">
+    </div> -->
+    <img src="/asset/printer/canon.webp" alt="Pixma Printer Image" class="printer-image" />
+    <div class="button-container">
+      <div class="button-box">
+        <button class="add-to-cart-btn" onclick="showAlert('Product has been added to your cart!')" style="text-align: center;">Add to Cart</button>
+        <button class="buy-now-btn" onclick="showAlert('Thank you for your purchase!'); redirectToThankYouPage()" style="text-align: center;">Buy
+          Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-div">
+    <div class="product-info-box">
+      <h2>Canon PIXMA MG2470 All-in-One Inkjet Printer</h2>
+      <p>(White, Grey, Ink Cartridge)</p>
+      <div class="price-details">
+        <p class="price-discounted">Rs. 9599</p>
+        <p class="price-original">Rs. 12000</p>
+        <p class="price-off">20% OFF</p>
+      </div>
+    </div>
+    <div class="additional-details-box">
+      <h3>Product Details</h3>
+      <p>Compact and Lightweight</p>
+      <p>Auto ON feature</p>
+      <p>Ink Cartridge</p>
+  </div>
+</div>
+
+
+<div class="right-div">
+  <div class="specifications-box">
+      <h3>Specifications</h3>
+      <ul>
+          <li><strong>Printing Methods:</strong> Inject</li>
+          <li><strong>Model Name/ Series:</strong> MG2470 / PIXMA</li>
+          <li><strong>Brand:</strong> Canon</li>
+          <li><strong>Ideal Usages:</strong> Home and Small Office</li>
+          <li><strong>Print Resolution:</strong> 4800*600 dpi</li>
+          <li><strong>Scan:</strong> 14 sec paper per</li>
+          <li><strong>Dimension:</strong> 145mm * 426mm</li>
+          <li><strong>Weight:</strong> 3.5kg</li>
+          <li><strong>Wireless Support:</strong> Yes</li>
+      </ul>
+  </div>
+</div>
+
+<script>
+  // var images = ['pixma.png', 'pigma13.png', 'pixma12.png'];
+  // var x = 0;
+  // var imgElement = document.getElementById('sliderImage');
+
+  // setInterval(slider, 4000);
+
+  // function slider() {
+  //   if (x < images.length - 1) {
+  //     x = x + 1;
+  //   } else {
+  //     x = 0;
+  //   }
+  //   imgElement.src = images[x];
+  // }
+
+  function showAlert(message) {
+    alert(message);
+  }
+</script>

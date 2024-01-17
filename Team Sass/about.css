@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.sub-nav-container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links:hover {
+  color:#1eff00;
+}
+
+.logo-name {
+  text-decoration: none;
+  color: #595959;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.searching {
+  height: 40px;
+  padding-left: 1rem;
+  padding-right: 4.5rem;
+  border-radius: 30px;
+  border-color: #1eff00;
+  outline: none;
+}
+form {
+  position: relative;
+}
+.search-btn {
+  position: absolute;
+  border-radius: 50%;
+  padding: 5px 10px;
+  right: 0;
+  background-color: #88c8bc;
+  border-color: #88c8bc;
+}
+.search-icon {
+  width: 20px;
+  border: 50%;
+}
+
+.container-second {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+}
+.lists {
+  list-style: none;
+}
+.links {
+  text-decoration: none;
+  padding: 10px 12px;
+  color: black;
+}
+
+.disount-message {
+  background-color: #88c8bc;
+  display: flex;
+  justify-content: center;
+}
+
+.display-message {
+  padding: 14px 0;
+  color: white;
+  width: 600px;
+  font-size: 25px;
+}
+
+.contact-info {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.information {
+  width: 1200px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.contact-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 4rem;
+}
+.info-box {
+  display: flex;
+  align-items: center;
+}
+.info-icon {
+  width: 30px;
+  padding-right: 10px;
+}
+.enquiry {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.sub-enquiry {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 28px;
+  gap: 1rem;
+}
+.name-container {
+  display: flex;
+  gap: 1rem;
+}
+.gmail{
+  padding-top: 20px;
+}
+
+.subject {
+  display: grid;
+  padding-top: 20px;
+}
+.message {
+  display: grid;
+  padding-top: 20px;
+}
+
+label {
+  font-size: 400;
+  color: #595959;
+  line-height: 2rem;
+}
+
+input {
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+}
+.message-btn {
+  padding: 8px 20px;
+  background-color: #616161;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  width: 10rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.message-btn:hover {
+  background-color: black;
+}
+/* .map {
+  height: 50rem;
+  width: fit-content;
+} */
+
+.map-img{
+  border-radius: 5px;
+  box-shadow: 5px solid black;
+  height: 50rem;
+  width:100%;
+  object-fit:cover;
+}
+.text-area {
+  padding: 1rem;
+}
+.info-title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.team-member {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+ .team-img {
+  width: 180px; 
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+.intro h1{
+  text-align: center;
+  font-size: 28px;
+}
+
+.socialmedia-icon{
+  height: 22px;
+  width: 22px;
+}
+
+.socialmedia{
+  display: flex;
+  justify-content: center;
+  gap:7px;
+  transition: all 0.3sec ease-in;
+}
+.socialmedia a:hover{
+  transform: scale(1.1);
+}
+
+.big{
+  color: red;
+  font-size: 40px;
+}
+
+.cv:hover{
+  transform: scale(1.1);
+}
+
+.cv,.socialmedia{
+  transition: all 0.3s ease-in;
+}
+  
+.cols{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-italic{
+  font-style: italic;
+  font-size: 8px;
+  transition: all 0.3 ease-in;
+  color: #010001;
+  
+}
+
+.footer-italic a:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+.team{
+  font-size: 8px;
+  text-align: center;
+  padding-top: 40px;
+  font-weight:lighter;
+}

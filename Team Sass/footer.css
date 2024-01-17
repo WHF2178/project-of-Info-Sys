@@ -1,0 +1,90 @@
+footer{
+  font-family: "poppins", sans-serif;
+}
+.footer-italic{
+    font-style: italic;
+    font-size: 18px;
+    transition: all 0.3 ease-in;
+    color: #010001;
+    display: grid;
+    line-height: 2.5rem;
+    
+  }
+  
+  .footer-italic a:hover{
+    color: green;
+    text-decoration: underline;
+  }
+  
+  .team{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+    font-weight:  100px;
+  }
+  .team-inside{
+    padding-top: 50px;
+  }
+
+  .socialmedia-icon{
+    height: 25px;
+    width: 25px;
+  }
+  
+  .socialmedia{
+    display: flex;
+    justify-content: center;
+    gap:7px;
+    transition: all 0.3sec ease-in;
+    position: absolute;
+  }
+
+  .socialmedia-icon {
+    transition: all 0.3s ease-in;
+    padding: 8px;
+  }
+  
+  .socialmedia-icon:hover {
+    filter: brightness(1.8); 
+    transform: scale(1.2);
+  }
+
+  
+  .cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  a{
+    position: relative;
+    width: fit-content;
+  }
+  .liner::after{
+    content: "";
+    display: block;
+    background-color: black;
+    position: absolute;
+    width: 0;
+    height: 2.7px;
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    bottom: 9px;
+  }
+
+  .liner:hover::after{
+    width: 100%;
+  }
+
+  footer{
+    background-color: #f5f5f5;
+    padding: 40px;
+    
+  }
+  .col1 h2{
+    font-family: rokkitt;
+    font-size: 28px;
+    font-weight: 400;
+  }
+ 

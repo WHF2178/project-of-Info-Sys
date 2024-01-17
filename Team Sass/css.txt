@@ -1,0 +1,358 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  .sub-nav-container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .container-first {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo-name {
+    text-decoration: none;
+    color: #595959;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .searching {
+    height: 40px;
+    padding-left: 1rem;
+    padding-right: 4.5rem;
+    border-radius: 30px;
+    border-color: #16e2e9;
+    outline: none;
+  }
+  form {
+    position: relative;
+  }
+  .search-btn {
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px 10px;
+    right: 0;
+  
+    background-color: #25ebc6;
+    border-color: #88c8bc;
+  }
+  .search-icon {
+    width: 20px;
+    border: 50%;
+  }
+  
+  .container-second {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .lists {
+    list-style: none;
+  }
+  .links {
+    text-decoration: none;
+    padding: 10px 12px;
+    color: black;
+  }
+  .disount-message {
+    background-color: #88c8bc;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .display-message {
+    padding: 14px 0;
+    color: white;
+    width: 600px;
+    font-size: 25px;
+  }
+
+
+.right-div {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translate(0%, -50%);
+    background-color: #f0f0f0; 
+    width: 100px; 
+    height: 200px; 
+}
+/* Styles for left div */
+.left-div {
+    position: absolute;
+    top: 40%;
+    left: 10px; 
+    transform: translate(9%, -50%);
+   
+    width: 100px; 
+    height: 200px; 
+}
+
+.button-container {
+    text-align: center;
+    display: flex;
+    justify-content:flex-end;
+    gap: 60px;
+    margin-top: 10px;
+}
+
+.button-box {
+    display: flex;
+    gap:0;
+    align-items: center; 
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+    padding: 10px;
+    text-align: justify;
+    background-color: #5bf9da;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-left: 65%;
+    margin-right: 5%; 
+    transition: background-color 0.4s ease;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+    background-color: #dd9639;
+    text-decoration: double;
+}
+
+
+
+
+/* Styles for middle div */
+.middle-div {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 23.33%; 
+}
+
+.product-info-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+}
+.product-info-box h2 {
+    margin: 50;
+    font-size: 25px; 
+    margin-right: -90%; 
+}
+.price-details {
+    display: flex;
+    margin-top: 10px; 
+
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+.price-discounted {
+    font-size: 24px;
+    color: #25ebc6;
+    margin-right: 10px;
+}
+
+.price-off {
+    color: #ff5722;
+    margin-right: 10px;
+}
+
+.product-details-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    width: 60%;
+    background-color: #5bf9da; 
+    color: #fff; 
+}
+
+
+.additional-details-box h3 {
+    padding: 10%;
+    font-size: 29px; 
+    margin-bottom: px; 
+}
+/* Styles for right div */
+.right-div {
+    position: absolute;
+    top: 60%;
+    right: 20px; 
+    left: 900px;
+    transform: translate(0%, -50%);
+    background-color: #f0f0f0; 
+    width: 300px; 
+    padding: 20px; 
+}
+
+.specifications-box {
+    text-align: left;
+    background-color: #25ebc6;
+}
+
+.specifications-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.specifications-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.specifications-box li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+          html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav</title>
+  <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+  <div class="nav-container">
+    <div class="sub-nav-container">
+      <!-- first-container -->
+      <div class="container-first">
+        <div class="logo">
+          <a href="#" class="logo-name">Printer Bazzar</a>
+        </div>
+        <div class="search-bar">
+          <form action="#">
+            <input type="text" placeholder="Search" class="searching" />
+            <button class="search-btn">
+              <img src="pngwing.com.png" alt="" class="search-icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- end of first container -->
+      <!-- starting navigation bar and add to cart -->
+      <div class="container-second">
+        <nav>
+          <ul class="nav-list">
+            <li class="lists"><a href="#" class="links">Home</a></li>
+            <li class="lists"><a href="#" class="links">Blog</a></li>
+            <li class="lists"><a href="#" class="links">Product</a></li>
+            <li class="lists"><a href="#" class="links">Research</a></li>
+            <li class="lists"><a href="#" class="links">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end of navigation bar and add to cart -->
+    </div>
+  </div>
+  <!-- displaying discount message -->
+  <div class="disount-message">
+    <marquee class="display-message">
+      OUR BIGGEST SALE 50% OFF ON ALL MINI PRINTER
+    </marquee>
+  </div>
+
+  <!-- Left, Middle, and Right Divs -->
+  <div class="left-div">
+    <div class="slider">
+      <img src="pic.jpg" alt="pic name" id="sliderImage">
+    </div>
+    <img src="pixma.png" alt="Pixma Printer Image" class="printer-image" />
+    <div class="button-container">
+      <div class="button-box">
+        <button class="add-to-cart-btn" onclick="showAlert('Product has been added to your cart!')">Add to Cart</button>
+        <button class="buy-now-btn" onclick="showAlert('Thank you for your purchase!'); redirectToThankYouPage()">Buy
+          Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-div">
+    <div class="product-info-box">
+      <h2>Canon PIXMA MG2470 All-in-One Inkjet Printer</h2>
+      <p>(White, Grey, Ink Cartridge)</p>
+      <div class="price-details">
+        <p class="price-discounted">Rs. 9599</p>
+        <p class="price-original">Rs. 12000</p>
+        <p class="price-off">20% OFF</p>
+      </div>
+    </div>
+    <div class="additional-details-box">
+      <h3>Product Details</h3>
+      <p>Compact and Lightweight</p>
+      <p>Auto ON feature</p>
+      <p>Ink Cartridge</p>
+  </div>
+</div>
+
+
+<div class="right-div">
+  <div class="specifications-box">
+      <h3>Specifications</h3>
+      <ul>
+          <li><strong>Printing Methods:</strong> Inject</li>
+          <li><strong>Model Name/ Series:</strong> MG2470 / PIXMA</li>
+          <li><strong>Brand:</strong> Canon</li>
+          <li><strong>Ideal Usages:</strong> Home and Small Office</li>
+          <li><strong>Print Resolution:</strong> 4800*600 dpi</li>
+          <li><strong>Scan:</strong> 14 sec paper per</li>
+          <li><strong>Dimension:</strong> 145mm * 426mm</li>
+          <li><strong>Weight:</strong> 3.5kg</li>
+          <li><strong>Wireless Support:</strong> Yes</li>
+      </ul>
+  </div>
+</div>
+
+<script>
+  var images = ['pixma.png', 'pigma13.png', 'pixma12.png'];
+  var x = 0;
+  var imgElement = document.getElementById('sliderImage');
+
+  setInterval(slider, 4000);
+
+  function slider() {
+    if (x < images.length - 1) {
+      x = x + 1;
+    } else {
+      x = 0;
+    }
+    imgElement.src = images[x];
+  }
+
+  function showAlert(message) {
+    alert(message);
+  }
+</script>

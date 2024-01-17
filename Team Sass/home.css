@@ -1,0 +1,496 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  /* justify-content: center;
+    align-items: center;
+    background: aquamarine; */
+}
+
+.slide-bg {
+  margin-top: 1.5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  /* filter: blur(10px); */
+  background-color: #c1c0c0;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.slide {
+  width: 500%;
+  height: 100vh;
+  display: flex;
+}
+
+.slide input {
+  display: none;
+}
+
+.st {
+  width: 20%;
+  transition: 2s;
+}
+
+.st img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* filter: blur(5px); */
+}
+
+.nav-m {
+  position: absolute;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  padding-left: 620px; /*dot wala change garne */
+}
+
+.m-btn {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+.m-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.m-btn:hover {
+  background-color: #4ebeea;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+/*
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 1px solid #f5f5f5;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s ease-in;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+#radio:checked ~ .nav-auto .a-b1{
+    background-color: #f5f5f5;
+}
+#radio:checked ~ .nav-auto .a-b2{
+    background-color: #f5f5f5;
+}
+#radio:checked ~ .nav-auto .a-b2{
+    background-color: #f5f5f5;
+} */
+
+.st {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  z-index: 10;
+  top: 180px;
+  left: 570px;
+  text-align: center;
+}
+
+.info .new h1 {
+  font-size: 100px;
+  letter-spacing: 15px;
+  color: #f5f5f5;
+  opacity: 80%;
+  font-family: rokkit;
+  margin: 1px;
+}
+
+.info .arrival h1 {
+  font-size: 65px;
+  font-weight: 10;
+  letter-spacing: 3px;
+  color: #f5f5f5;
+  opacity: 75%;
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+  font-family: karla;
+  line-height: 20px;
+  font-family: rokkit;
+}
+
+.secondsection {
+  position: absolute;
+  z-index: 10;
+  top: 350px;
+  left: 570px;
+}
+
+.secondsection .off h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.secondsection .shopcollection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 75px;
+}
+
+.secondsection .shopcollection .shopme {
+  width: 150px;
+  height: 35px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-size: 16px;
+  transition: all 0.3sec ease-in;
+  background-color: aquamarine;
+}
+
+.secondsection .shopcollection .shopme:hover {
+  background-color: rgb(91, 87, 87);
+  color: antiquewhite;
+  transform: scale(1.05);
+}
+.secondsection .off h1 {
+  text-align: center;
+  padding-left: 20px;
+  font-style: rokkit;
+  padding-top: 15px;
+  padding-left: 75px;
+}
+.secondsection .off .bichha-ma {
+  letter-spacing: 2px;
+  line-height: 10px;
+  color: #f5f5f5;
+  opacity: 80%;
+}
+
+.coverlayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(0,0,0,0.5); */
+  z-index: 11;
+  background-color: black;
+}
+.discount-25 {
+  font-size: 40px;
+  color: yellow;
+}
+.info1 {
+  position: absolute;
+  z-index: 10;
+  top: 120px;
+  left: 440px;
+  text-align: center;
+}
+.info1 .mega-offers p {
+  font-size: 75px;
+  font-family: rokkit;
+  font-weight: 600;
+  /* color:rgb(10, 10, 27); */
+  color: #010001;
+
+  opacity: 80%;
+}
+
+.info1 .on {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.info1 .on p {
+  font-size: 60px;
+  font-family: rokkit;
+  font-weight: 700;
+  /* color: #00fbff; */
+  color: white;
+  opacity: 95%;
+  line-height: 60px;
+  box-shadow: 2px solid pink;
+}
+
+.info1 .blue-monday {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.info1 .blue-monday .bm {
+  font-size: 60px;
+  /* color: blue; */
+  color: rgb(255, 255, 255);
+  opacity: 80%;
+  font-weight: 900;
+  font-family: rokkit;
+}
+
+.slide2img {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide2img .join {
+  padding-left: 30px;
+}
+
+/* .slide2img .joinme{
+    width: 100px;
+    height: 35px;
+} */
+.slide2img .shopme {
+  width: 100px;
+  height: 35px;
+  background-color: plum;
+  border-color: 0.5px black;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+
+.slide2img .shopme:hover {
+  color: #010001;
+  background-color: rgb(59, 228, 228);
+  transform: scale(1.05);
+  border-color: rgb(255, 255, 255);
+}
+
+.iconss .soc-med {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconss .soc-med .soc-img {
+  height: 26px;
+  width: 26px;
+}
+
+.iconss .soc-med .soc-img:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(230, 228, 228, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.iconss {
+  margin-top: 55px;
+  font-weight: 400;
+}
+.iconss .follow {
+  display: flex;
+  justify-content: center;
+}
+
+.iconss .follow .follows {
+  font-size: 22px;
+  font-family: montserrat;
+  /* text-decoration: underline; */
+  color: white;
+  opacity: 80%;
+}
+
+.info2 {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  left: 200px;
+  text-align: center;
+}
+/* .parallelogram {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(10, 183, 252);
+  transform: skew(-20deg);
+  margin: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding-right: 150px;
+}
+
+.parallelogram .text-inside{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  position: relative;
+
+}
+.parallelogram .text-inside .milauni {
+  font-size: 35px;
+  font-family: rokkit;
+  font-size: 40px;
+  letter-spacing: .5px;
+} */
+
+.sabai-container .leftside{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 30px;
+}
+.sabai-container .rightside{
+    margin: 30px;
+    height: 80%;
+
+}
+
+.sabai-container .leftside .parallelogram .text-inside {
+  transform: skew(20deg);
+  color: #fff;
+  
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+
+}
+
+.sabai-container .leftside{
+    padding-left: 200px;
+    background-color: rgba(84, 84, 82, 0.548);
+    box-shadow: 3px solid black;
+}
+
+
+.st .sabai-container{
+    display: flex;
+    width: 100%;
+
+}
+.st .rightside{
+    width: 50%;
+    position: static;
+}
+
+
+.st .leftside{
+    width: 50%;
+}
+
+ .textharu{
+  text-align: left;
+  padding-right:100px;
+  width: 550px;
+  padding-top: 40px;
+
+}
+
+.leftside .text-milauni{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding-left: 500px;
+  position: absolute;
+  padding-top: 80px;
+  padding-right: 650px;
+}
+
+.textharu{
+  margin:100px
+
+}
+
+.textharu .great p{
+  font-size: 60px;
+  font-family: rokkit;
+  font-weight: 800;
+  color: #010001;
+  opacity: 90%;
+}
+
+.textharu .happen p{
+  font-size: 30px;
+  line-height: 30px;
+  height: 40px;
+  letter-spacing: 3px;
+  padding-top: 10px;
+  opacity: 88%;
+}
+
+.textharu .right-now p{
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  font-family: rokkit;
+  font-weight:600;
+  opacity: 90%;
+}
+
+.shopwala{
+  display:flex;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 440px;
+  padding-right: 468px;
+  text-align: left;
+  gap: 30px;
+  transition: all 0.3s ease-in;
+}
+
+.me-shop{
+  width: 100px; 
+  background-color: rgb(183, 175, 175);
+  height: 30px;
+}
+
+.me-shop:hover{
+  transform: scale(1.1);
+  background-color: rgb(88, 88, 88);
+  border-radius: none;
+  color: rgb(255, 255, 255);
+}
+
+.trans{
+  position: relative;
+}
+
+.audio-wala{
+  justify-content: center;
+  align-items: center;
+  padding-left: 890px;
+  padding-top: 60px;
+}

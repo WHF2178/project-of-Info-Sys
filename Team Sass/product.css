@@ -1,0 +1,163 @@
+.img-sale{
+    height: 250px;
+    width: 300px;
+  }
+
+  .sales{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    width: 60%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgb(214, 141, 192); /*x,y,failaune axis */
+ }
+
+ .salescontain{
+    display: flex;
+    justify-content: center;
+ }
+
+ .printerimg{
+    width: 200px;
+    height: 200px;
+
+ }
+
+ .printers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:150px;
+ }
+
+ .printercontainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 3rem;
+    
+ }
+
+ .p-info{
+  padding-top: 20px;
+  font-family: rokkitt;
+  font-size: 20px;
+  justify-content: center;
+ }
+
+ .p-info .p1{
+   font-size: 15px;
+   font-weight: 400;
+   padding-bottom: 15px;
+   padding-top: 10px;
+}
+
+
+.info .p2{
+   font-size: 28px;
+   font-weight: 800;
+   
+}
+ .canon {
+    overflow: hidden;
+    background-color: f5f5f5;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+ }
+ .canon:hover{
+    transform: scale(1.2);
+ }
+
+ .clear{
+   display: flex;
+   justify-content: center;
+   padding-top: 12%;
+   font-size: 35px;
+   letter-spacing: 5px;
+   font-family: rokkitt;
+ }
+
+ .sale{
+   font-size: 60px;
+   text-align: center;
+   font-family: montserrat;
+   color: red;
+ }
+
+ .shop-now{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+ }
+
+ .save{
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 30px;
+   font-size: 28px;
+   font-family: rokkitt;
+
+}
+
+.img-sale{
+   width: 240px;
+   height: 150px;  
+   border-radius: 10px;
+ }
+ .productinfo{
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+ }
+ 
+.heading h1{
+   padding-top: 65px;
+   text-align: center;
+   font-size: 25px;
+   font-family: rokkitt;
+   font-size: 38px;
+   font-weight: 500;
+}
+
+ .btn{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  
+ }
+ .buutt{
+   background-color: aquamarine;
+   border-radius: 7px;
+   padding: 5px 10px;
+   box-shadow: 0 2px 5px black;
+   border: 0;
+   transition: all 0.3sec ease-in;
+   width: 140px;
+   height: 40px;
+   font-size: 18px;
+   font-weight: 530;
+  font-family: montserrat;
+  letter-spacing: 1px;
+  
+ }
+
+ .buutt:hover{
+  transform: scale(1.03);
+  background-color: pink;
+ }
+
+
+ /* footer{
+  padding-top: 60px;
+ } */
+
+ .canon:hover{
+  /* background-color: rgb(0, 0, 0,0.2);
+  backdrop-filter: blur(5px); */
+  box-shadow: 0 2px 5px black;
+ }
